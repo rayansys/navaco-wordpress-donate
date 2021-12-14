@@ -151,6 +151,7 @@ function navacoDonateForm()
 	if (isset($_POST['Data']) && $_POST['Data'] != "")
 	{
 		$data = (isset($_POST['Data']) && $_POST['Data'] != "") ? $_POST['Data'] : "";
+		$data = str_replace("\\","",$data);
         $data = json_decode($data);
 		if (isset($data->ActionCode) && (int)$data->ActionCode == 0 )
 		{
