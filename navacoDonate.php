@@ -17,7 +17,7 @@ define ('LIBDIR'  , navacoDonateDIR.'/lib');
 define ('TABLE_DONATE'  , 'navaco_donate');
 
 require_once ABSPATH . 'wp-admin/includes/upgrade.php';
-$url = "https://fcp.shaparak.ir/nvcservice/Api/v2/";
+$url = "http://79.174.161.132:8181/nvcservice/Api/v2/";
 if ( is_admin() )
 {
 	add_action('admin_menu', 'navaco_AdminMenuItem');
