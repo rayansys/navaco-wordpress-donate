@@ -152,7 +152,7 @@ function navacoDonateForm()
 	{
 		$data = (isset($_POST['Data']) && $_POST['Data'] != "") ? $_POST['Data'] : "";
 		$data = str_replace("\\","",$data);
-        $data = json_decode($data);
+        	$data = json_decode($data);
 		if (isset($data->ActionCode) && (int)$data->ActionCode == 0 )
 		{
 			$Record = navaco_GetDonate($_SESSION["InvoiceID"]);
